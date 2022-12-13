@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>长征纪念馆</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+        <a-assets>
+            <img id="sky" src="pictures/5.jpg">
+            <img id="item" src="pictures/item.png">
+            <img id="back" position="-15.76251 -13.92068 -1.42986" rotation="-36.25791519146876 88.3380598954752 -1.2960305325859223" src="pictures/back.jpg">
+            <img id="forward" src="pictures/forward.jpg">
+          </a-assets>
+          <a-sky src="#sky"></a-sky>
+          <a-image link="href: view_04.html"src="#back"position="-15.6 0.5 0.2"rotation="0 90 0"scale="3 4 3 "
+          animation__mouseenter="property: scale;  to: 4 5.3 4; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: scale;  to: 3 4 3; startEvents: mouseleave; dur: 500"></a-image>
+          <a-image link="href: view_06.html"src="#forward"position="-10.1 0.5 -15.88"rotation="0 50 0"scale="3 4 3 "
+          animation__mouseenter="property: scale;  to: 4 5.3 4; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: scale;  to: 3 4 3; startEvents: mouseleave; dur: 500"></a-image>
+          <a-entity vive-controls="hand: left"></a-entity>
+          <a-entity laser-controls="hand: right"><a-cursor></a-cursor></a-entity>
+          
+    </a-scene>
+  </body>
+</html>

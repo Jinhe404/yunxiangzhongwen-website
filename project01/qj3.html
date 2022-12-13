@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>长征纪念馆</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+        <a-assets>
+            <img id="sky" src="./hhl/IMG_12全景.jpg">
+            <img id="item" src="pictures/item.png">
+            <img id="back" position="-15.76251 -13.92068 -1.42986" rotation="-36.25791519146876 88.3380598954752 -1.2960305325859223" src="pictures/back.jpg" windows-motion-controls="hand: right">
+            <img id="forward" src="pictures/forward.jpg" windows-motion-controls="hand: left">
+            <!-- <img id="book" src="pictures/book.png"> -->
+            <!-- <img id="example" src="pictures/example.png">
+            <img id="poem" src="pictures/poem.png"> -->
+
+          </a-assets>
+          <a-sky src="#sky"></a-sky>
+          <a-image link="href: qj.html"src="#back"position="-1.71 0.5 23"rotation="0 180 0"scale="3 4 3 "
+          animation__mouseenter="property: scale;  to: 4 5.3 4; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: scale;  to: 3 4 3; startEvents: mouseleave; dur: 500"></a-image>
+          <a-image link="href: qj2.html"src="#forward"position="-15.6 0.5 -11.6"rotation="0 50 0"scale="3 4 3 "
+          animation__mouseenter="property: scale;  to: 4 5.3 4; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: scale;  to: 3 4 3; startEvents: mouseleave; dur: 500"></a-image>
+          <!-- <a-image visible="true"link="href: qj1.html"src="#book"position="-10.5 0.5 6.78"rotation="0 -63.428 0"scale="3 3 3 "
+          animation__mouseenter="property: scale;  to: 4 4 4; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: scale;  to: 3 3 3; startEvents: mouseleave; dur: 500"></a-image> -->
+          <!-- <a-image src="#poem" position="-4.3 0.7 2.363"rotation="0 120 0" opacity="0"scale="1.2 0.8 1.2" -->
+          <!-- animation__mouseenter="property: opacity;  to:1; startEvents: mouseenter; dur: 500"
+          animation__mouseleave="property: opacity;  to:0; startEvents: mouseleave; dur: 500"
+          animation__mouseenter2="property: scale;  to:3.5 1.75 3.5; startEvents: mouseenter; dur: 500"
+          animation__mouseleave2="property: scale;  to:1.2 0.8 1.2; startEvents: mouseleave; dur: 500"
+          animation__mouseenter3="property: position;  to:-1.967 1 1; startEvents: mouseenter; dur: 500"
+          animation__mouseleave3="property: position;  to:-4.3 0.7 2.363; startEvents: mouseleave; dur: 500"></a-image> -->
+          <!-- <a-entity vive-controls="hand: left"></a-entity>
+          <a-entity laser-controls="hand: right"><a-cursor></a-cursor></a-entity> -->
+          <!-- <a-entity position="0 0 -5" rotation="0 0 0"><a-camera></a-camera></a-entity> -->
+    </a-scene>
+  </body>
+</html>
